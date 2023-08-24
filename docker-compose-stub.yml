@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  keycloak-stub:
+    ports:
+      - '8180:8080'
+      - '12443:8443'
+    volumes:
+      - './keycloak-stub:/home/wiremock'
+    image: 'rodolpheche/wiremock:2.25.1'
+    command: "--global-response-templating --verbose"
+

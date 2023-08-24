@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/auth/realms/.*/.well-known/openid-configuration"
+  },
+  "response": {
+    "status": 200,
+    "body": "nothing to do here!!"
+  }
+}
